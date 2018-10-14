@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>清泽心雨招新</title>
+<style type="text/css">
+@media (max-width: 768px){
+		.change{
+			height: 100%;
+ 			float: right;
+ 			margin: 15px;
+ 		}
+	}
+	@media (min-width: 768px){
+		.change{
+ 		display: none;
+ 		}
+	}
+body 
+{
+background-image:url('timg.jpg';) 
+} 
+body{font-family:"Microsoft Yahei";font-weight:bold;}
+</style>
+</head>
+<body>
+<form>
+    姓名  
+    <input type="text" name="myname">  
+    </br>  
+    专业名称
+    <input type="text" name="professional">
+    </br>
+    电话号码
+    <input type="text" name="phonenumber">
+    </br>
+    邮箱地址
+    <input type="text" name="email">
+    </br>
+<form action="save.php" method="post" >
+    <label>意向部门:</label>
+    <select>
+      <option value="综合办公室">综合办公室</option>
+      <option value="公关策划部">公关策划部</option>
+      <option value="网络安全部">网络安全部</option>
+      <option value="视觉设计部">视觉设计部</option>
+      <option value="技术开发部">技术开发部</option>
+      <option value="综合媒体集团">综合媒体集团</option>
+      <option value="新闻集团">新闻集团</option>
+      <option value="视频集团">视频集团</option>
+    </select></br>
+<p>如果你选择了视频集团，请完成以下此选择</P>
+<form action="save.php" method="post" >
+    <label>视频集团:</label>
+    <select>
+      <option value="微效坊">微效坊</option>
+      <option value="微影像">微影像</option>
+      <option value="电视台">电视台</option> 
+    </select></br>
+</br>
+<form action="save.php" method="post" >
+    <label>性别:</label>
+    <label>男</label>
+    <input type="radio" value="1"  name="gender" />
+    <label>女</label>
+    <input type="radio" value="2"  name="gender" />
+    <input type="submit" value="提交" name="submitBtn" />
+</form>
+</body>
+</html>
